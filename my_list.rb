@@ -9,5 +9,4 @@ class MyList
     @list.each(&block)
     self
   end
-  
 end
