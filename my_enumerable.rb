@@ -14,4 +14,12 @@ module MyEnumerable
     end
     result
   end
+
+  def filter(&block)
+    result = []
+    each do |element|
+      result.push(element) if block.call(element)
+    end
+    result
+  end
 end

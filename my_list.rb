@@ -22,4 +22,4 @@ class MyList
 end
 
 list = MyList.new(1, 2, 3, 4, 10)
-puts(list.any? { |char| char > 8 })
+p(list.filter { |char| char >= 3 })
